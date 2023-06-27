@@ -22,14 +22,12 @@ header button {
 }
 
 .header {
-  width: 100%;
-  background-color: #0096c7;
-  padding: 1em;
+  background-color: blanchedalmond;
+  padding: 0 1em 0 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: white;
 }
 
 .header img {
@@ -58,6 +56,7 @@ header button {
   font-size: 1.2rem;
   font-weight: 900;
   transition: 550ms;
+  font-family: "Playball", cursive;
 }
 
 .header .li:hover {
@@ -102,8 +101,18 @@ li {
   }
   .header .ul {
     flex-direction: column;
+    background-color: blanchedalmond;
   }
   .header .li {
     margin: 1rem 0;
   }
+}
+.h1 img {
+  width: 100px;
+  height: 100px;
+}
+
+.a {
+  color: black;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
