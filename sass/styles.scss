@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@mixin df-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin df-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin df-align-item {
+    display: flex;
+    align-items: center;
+}
+
+@mixin df-direction-clmn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin df-aling-justify-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header button {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .button {
+    border: 0;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #0096c7;
+    padding: 1em;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    color: white;
+  }
+  
+  .header img {
+    width: 150px;
+  }
+  
+  
+  .header .button {
+    display: none;
+  }
+  
+  .header .svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+  }
+  
+  .header .ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  
+  }
+  
+  .header .li {
+    margin: 0 .5em;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: 550ms;
+  }
+  
+  .header .li:hover {
+    transition: 550ms;
+    font-size: 1.4rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  @media screen and (max-width:680px) {
+    .header {
+      flex-flow: row wrap;
+    }
+  
+    .header .button {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .header .nav {
+      width: 100%;
+        display: none; 
+      height: 0;
+      pointer-events: none;
+      overflow: hidden;
+      transition: all .5s ease;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .header .nav.activo {
+      display: block; 
+      height: 50vh;
+      pointer-events: auto;
+    }
+  
+    .header .ul {
+      flex-direction: column;
+    }
+  
+    .header .li {
+      margin: 1rem 0;
+    }
+  
+  }
