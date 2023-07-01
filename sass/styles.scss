@@ -388,16 +388,73 @@ footer {
     .newsletter {
         text-align: center;
 
+
+        h2 {
+            font-family: "Playball", cursive;
+            font-weight: 500;            
+        }
+
         .email {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
 
+            .enviar {
+                color: #000;
+                padding: 1%;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                background-color: blanchedalmond;
+                border: blanchedalmond solid;
+                border-radius: 3px;
+            }
+
             .email1 {
                 width: 65%;
+                font-family: "Roboto", sans-serif;
+                color: #000;
             }
         }
     }
 
+}
+
+/**termina home**/
+
+/**Comienzan los cursos**/
+
+.part1_about {
+    @include df-row();
+
+    .img {
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-image: url(../imgs/serecibio.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .img:hover::after {
+        transform: translateY(0%);
+        transition: 600ms;
+    }
+
+    .img::after {
+        content: "Ponencia en Mendoza. Junio 2023. Ponente en Mendoza para dictar una clase magistral de expertas en miradas, para la academia Internacional Lash Trainers, reconocida mundialmente.";
+        font-size: 20px;
+        color: white;
+        background-color: #16456198;
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        transform: translateY(100%);
+        transition: 600ms;
+        text-align: center;
+    }
 }
