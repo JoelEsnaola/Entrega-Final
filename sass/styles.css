@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -350,6 +351,22 @@ footer .newsletter .email .email1 {
 
 /**termina home**/
 /**Comienzan los cursos**/
+.h1_about {
+  text-align: center;
+  color: white;
+  font-family: "Playball", cursive;
+  padding-top: 2%;
+}
+
+.nf {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .part1_about {
   display: flex;
   flex-direction: row;
@@ -358,12 +375,18 @@ footer .newsletter .email .email1 {
   width: 300px;
   height: 400px;
   margin: 0 auto;
-  margin-top: 50px;
-  background-image: url(../imgs/serecibio.jpg);
+  margin-top: 2%;
+  background-image: url(../imgs/contenido1.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 15px #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Playball", cursive;
 }
 .part1_about .img:hover::after {
   transform: translateY(0%);
@@ -373,7 +396,7 @@ footer .newsletter .email .email1 {
   content: "Ponencia en Mendoza. Junio 2023. Ponente en Mendoza para dictar una clase magistral de expertas en miradas, para la academia Internacional Lash Trainers, reconocida mundialmente.";
   font-size: 20px;
   color: white;
-  background-color: rgba(22, 69, 97, 0.5960784314);
+  background-color: rgba(198, 162, 86, 0.5960784314);
   position: absolute;
   inset: 0;
   display: grid;
@@ -381,4 +404,181 @@ footer .newsletter .email .email1 {
   transform: translateY(100%);
   transition: 600ms;
   text-align: center;
+}
+
+.img2 {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 2%;
+  background-image: url(../imgs/serecibio.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px #000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  font-family: "Playball", cursive;
+}
+
+.img2:hover::after {
+  transform: translateY(0%);
+  transition: 600ms;
+}
+
+.img2::after {
+  content: "Congreso 2019. Obtencion de titulo de lash trainer Internacional. Descatacada como profesional siendo la única pionera en Argentina en realizar extensiones de cejas como trabajo previo al microblading ";
+  font-size: 20px;
+  color: white;
+  background-color: rgba(198, 162, 86, 0.5960784314);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(100%);
+  transition: 600ms;
+  text-align: center;
+}
+
+.img3 {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 2%;
+  background-image: url(../imgs/mamisola.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px #000;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: palevioletred;
+  font-family: "Playball", cursive;
+}
+
+.img3:hover::after {
+  transform: translateY(0%);
+  transition: 600ms;
+}
+
+.img3::after {
+  content: "Especialista y reconocida internacionalmente por la Técnica ombré en lash artist Brows y lash trainer internacional, con certificación en Argentina, Venezuela y Mexico Artista PMU Speaker de congresos online y presencial";
+  font-size: 20px;
+  color: white;
+  background-color: rgba(198, 162, 86, 0.5960784314);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(100%);
+  transition: 600ms;
+  text-align: center;
+}
+
+/**Termina part1_about**/
+.part2_about {
+  display: flex;
+  flex-direction: row;
+}
+.part2_about article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+  padding: 1%;
+  font-weight: 500;
+  font-family: "Playball", cursive;
+}
+.part2_about .img_part2 {
+  width: 55%;
+  padding: 2%;
+}
+.part2_about .img_part2 img {
+  height: 600px;
+  width: 700px;
+  box-shadow: 0 0 15px #000;
+}
+
+/**Termina part2_about**/
+.h2_part3_about {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  padding-left: 18%;
+  padding-top: 3%;
+}
+
+.box_grande {
+  display: flex;
+  padding-bottom: 2%;
+}
+.box_grande .como_empezo {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  gap: 1%;
+  width: 50%;
+}
+.box_grande .como_empezo div:nth-child(1) {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_grande .como_empezo div:nth-child(2) {
+  width: 50%;
+}
+.box_grande .como_empezo p {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.box_grande .como_empezo img {
+  width: 300px;
+  height: 300px;
+}
+.box_grande .nuestros_cursos {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.box_grande h2 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+.box_grande img {
+  height: 150px;
+  width: 150px;
+  box-shadow: 0 0 15px #000;
+}
+.box_grande .nuestros_cursos2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.box_grande .nc1, .box_grande .nc2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+.box_grande .nc1 p, .box_grande .nc2 p {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 70%;
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
