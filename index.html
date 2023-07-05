@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./sass/styles.css?1.0" media="all">
     <link rel="shortcut icon" href="./imgs/logo_VE.png" />
     <title>A.I.V.E Academy</title>
@@ -44,21 +45,22 @@
     </header>
 
     <main>
-        <div class="welcome">
+        <div class="welcome" data-aos="fade-up">
             <h1>COMIENZA TU CARRERA PROFESIONAL EN EL MUNDO
                 DE LA ESTETICA EN ACADEMIA VANINA ESNAOLA</h1>
             <p class="p1">!Toma el control de tu futuro¡</p>
             <div class="mas_info">
-                <a href="#allcurso" class="png_info">
+                <a href="#allcursos" class="png_info">
                     <img src="./imgs/informacion.png" alt="mas info">
                     <p class="p2">Mas Info.</p>
                 </a>
             </div>
         </div>
 
-        <section class="part1">
+        <section class="part1" data-aos="fade-up"
+        data-aos-duration="500">
             <h1>FOTOS ACADEMIA</h1>
-            <div class="fotos_academia">
+            <div class="fotos_academia" data-aos="zoom-out-up">
                 <img src="./imgs/contenido2.jpg" alt="fotos vanina">
                 <img src="./imgs/contenido3.jpeg" alt="fotos vanina">
                 <img src="./imgs/contenido4.jpeg" alt="fotos vanina">
@@ -67,7 +69,7 @@
 
 
 
-        <section class="part2">
+        <section class="part2" data-aos="zoom-in">
 
             <div class="card">
                 <div>
@@ -132,16 +134,16 @@
             </div>
         </section>
 
-        <section class="cursos" id="allcursos">
+        <section class="cursos" id="allcursos" data-aos="fade-up">
             <div class="box_cursos">
                 <h3>Capacitaciones</h3>
                 <div class="cards_cursos">
-                    <div><a href="./cursos/cursoCejas.html"><img src="./imgs/Curso Cejas.jpg" alt=""></a></div>
-                    <div><a href="./cursos/cursoPestañas.html"><img src="./imgs/cursosdepestañas.jpg" alt=""></a></div>
-                    <div><a href="./cursos/cursoUñas.html"><img
+                    <div data-aos="zoom-in"><a href="./cursos/cursoCejas.html"><img src="./imgs/Curso Cejas.jpg" alt=""></a></div>
+                    <div data-aos="zoom-in"><a href="./cursos/cursoPestañas.html"><img src="./imgs/cursosdepestañas.jpg" alt=""></a></div>
+                    <div data-aos="zoom-in"><a href="./cursos/cursoUñas.html"><img
                                 src="./imgs/Historia de Instagram Matrícula cursos Profesional azul y blanco.jpg"
                                 alt=""></a></div>
-                    <div><a href="./cursos/cursoIntensivos.html"><img src="./imgs/Cursos Intensivos.jpg" alt=""></a></div>
+                    <div data-aos="zoom-in"><a href="./cursos/cursoIntensivos.html"><img src="./imgs/Cursos Intensivos.jpg" alt=""></a></div>
                 </div>
             </div>
         </section>
@@ -193,8 +195,10 @@
             </div>
     </footer>
 
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script>
         const button = document.querySelector('.button')
         const nav = document.querySelector('.nav')

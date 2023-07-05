@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../sass/styles.css" media="all">
     <link rel="shortcut icon" href="./imgs/logo_VE.png" />
     <title>A.I.V.E Academy</title>
@@ -36,7 +37,6 @@
         <nav class="nav">
             <ul class="ul">
                 <li class="li"><a href="../index.html" class="a">Home</a></li>
-                <li class="li"><a href="../index.html" class="a">Cursos</a></li>
                 <li class="li"><a href="../about.html" class="a">About</a></li>
                 <li class="li"><a href="#footer" class="a">Contact</a></li>
             </ul>
@@ -45,7 +45,10 @@
 
     <main class="main_curso">
         <h1>Cursos Pestañas</h1>
-        <section class="first_curso">
+        <section class="first_curso" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">
             <div class="box_info">
                 <div class="box_foto_curso">
                     <img src="../imgs/cejas.jpg" alt="cejas_de_muestra">
@@ -246,7 +249,10 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script>
         const button = document.querySelector('.button')
         const nav = document.querySelector('.nav')
