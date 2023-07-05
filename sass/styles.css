@@ -142,6 +142,13 @@ main {
   background-size: cover;
 }
 
+.png_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8%;
+}
+
 .png_info img {
   width: 40px;
   height: 40px;
@@ -186,6 +193,7 @@ main {
 .welcome .p2 {
   font-family: "Roboto", sans-serif;
   color: white;
+  width: 100px;
 }
 
 /**Termina Welcome**/
@@ -300,15 +308,22 @@ footer .maps, footer .derechos {
   align-items: center;
 }
 footer .derechos {
-  justify-content: space-around;
+  justify-content: space-between;
+}
+footer .derechos div:nth-child(1) {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer .redes img {
   width: 50px;
   height: 50px;
 }
 footer .derechos img {
-  width: 70%;
+  width: 50%;
   height: 70%;
+  padding-top: 8%;
 }
 footer .redes {
   display: flex;
@@ -581,4 +596,204 @@ footer .newsletter .email .email1 {
   text-align: center;
   width: 70%;
   font-family: "Roboto", sans-serif;
+}
+
+/**termina about**/
+.main_curso {
+  background: url(../imgs/6179262.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+}
+.main_curso h1 {
+  color: blanchedalmond;
+  font-family: "Playball", cursive;
+  padding-bottom: 1%;
+  font-size: 40px;
+}
+
+.first_curso {
+  display: flex;
+  flex-direction: column;
+  border: 10px solid black;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, burlywood, rgba(128, 128, 128, 0.5));
+}
+.first_curso .box_info {
+  display: flex;
+  flex-direction: row;
+}
+.first_curso .box_info .box_infoCurso {
+  color: white;
+  width: 50%;
+}
+.first_curso .box_info .box_infoCurso ol {
+  padding: 4% 0 0 4%;
+}
+.first_curso .box_info .box_infoCurso ol li {
+  padding: 3%;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.first_curso .box_info .box_infoCurso h2 {
+  text-align: center;
+  font-family: "Playball", cursive;
+  font-size: 55px;
+  width: 100%;
+}
+.first_curso .box_info .box_foto_curso {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_curso .box_info .box_foto_curso img {
+  height: 90%;
+  width: 80%;
+  box-shadow: 0 0 15px #000;
+  border-radius: 8px;
+}
+.first_curso .box_info2 {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  padding-top: 4%;
+}
+.first_curso .box_info2 .temas {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 2%;
+  padding: 1%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: radial-gradient(circle, #808080, #000000);
+}
+.first_curso .box_info2 .temas p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.first_curso .box_info2 .temas h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 2% 0 0 1%;
+}
+.first_curso .box_info2 .temas ul li {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+.first_curso .box_info2 .compra {
+  display: flex;
+  flex-direction: row;
+}
+.first_curso .box_info2 .compra .metodos_dePago {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.first_curso .box_info2 .compra .metodos_dePago h5 {
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.first_curso .box_info2 .compra .metodos_dePago ol {
+  color: white;
+}
+.first_curso .box_info2 .compra .metodos_dePago ol li {
+  padding: 4%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.dinero, .tarjeta, .banco {
+  width: 50px;
+  height: 50px;
+  padding-left: 10%;
+}
+
+.como_pagar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 15%;
+  width: 50%;
+}
+.como_pagar .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.como_pagar .button button {
+  padding: 2%;
+  height: 40%;
+  width: 40%;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #000;
+  border: 2px solid black;
+  border-radius: 8px;
+  transition: 600ms;
+}
+.como_pagar .button button:hover {
+  height: 48%;
+  width: 48%;
+  font-size: 18px;
+  transition: 600ms;
+}
+
+.trabajos_alumnas {
+  display: flex;
+  flex-direction: column;
+}
+.trabajos_alumnas .one_trabajos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+}
+.trabajos_alumnas .one_trabajos p {
+  font-weight: 600;
+}
+
+.galeria {
+  width: 60px;
+  height: 60px;
+}
+
+.two_trabajos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4%;
+  padding-top: 2%;
+  height: 100%;
+}
+.two_trabajos .fotos_alumnas {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 15px #000;
+  border-radius: 10px;
+  transition: 600ms;
+}
+.two_trabajos .fotos_alumnas:hover {
+  width: 115px;
+  height: 115px;
+  box-shadow: 0 0 25px #000;
+  transition: 600ms;
+}
+
+.first_curso:nth-child(3) {
+  margin-top: 2%;
 }/*# sourceMappingURL=styles.css.map */
