@@ -360,6 +360,7 @@ footer {
     display: flex;
     padding: 2% 2% 0 2%;
     color: white;
+    justify-content: space-around;
 
     .maps,
     .derechos {
@@ -1079,7 +1080,7 @@ footer {
 @media (max-width:815px) {
     footer {
         display: grid;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 30% 30% 30%;
         
         #sociales {
             display: grid;
