@@ -173,7 +173,7 @@ li {
         height: 50px;
         width: 50px;
     }
-  }
+}
 
 
 
@@ -256,16 +256,15 @@ main {
 
 
 .fotos_academia {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include df-aling-justify-c();
+    gap: 2rem;
 
     img {
-        height: 300px;
-        width: 400px;
+        width: 30%;
         box-shadow: 0 0 15px #000;
         margin-top: 4%;
         transition: 800ms;
+        aspect-ratio: 1/1;
     }
 
     img:hover {
@@ -294,6 +293,7 @@ main {
         align-items: center;
         color: white;
         font-family: "Roboto", sans-serif;
+        text-align: center;
 
         h4 {
             font-size: 20px;
@@ -313,7 +313,7 @@ main {
 .cursos {
     display: flex;
     justify-content: center;
-    margin-top: 8% ;
+    margin-top: 8%;
 
     .box_cursos {
         @include df-direction-clmn();
@@ -340,7 +340,7 @@ main {
 
             img {
                 width: 100%;
-                height: 100%; 
+                height: 100%;
                 box-shadow: 0 0 15px #000;
                 transition: 650ms;
             }
@@ -361,12 +361,13 @@ footer {
     padding: 2% 2% 0 2%;
     color: white;
 
-    .maps, .derechos  {
+    .maps,
+    .derechos {
         @include df-direction-clmn();
         justify-content: center;
         align-items: center;
     }
-    
+
     .derechos {
 
         div:nth-child(1) {
@@ -384,10 +385,10 @@ footer {
         height: 50px;
     }
 
-    .derechos  img {
-       width: 50%;
-       height: 70%;
-       padding-top: 8%;
+    .derechos img {
+        width: 50%;
+        height: 70%;
+        padding-top: 8%;
     }
 
     .redes {
@@ -407,7 +408,7 @@ footer {
 
         h2 {
             font-family: "Playball", cursive;
-            font-weight: 500;            
+            font-weight: 500;
         }
 
         .email {
@@ -468,7 +469,7 @@ footer {
         background-position: center;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 0 15px #000; 
+        box-shadow: 0 0 15px #000;
         text-align: center;
         font-size: 18px;
         font-weight: 500;
@@ -508,10 +509,10 @@ footer {
     overflow: hidden;
     box-shadow: 0 0 15px #000;
     text-align: center;
-        font-size: 15px;
-        font-weight: 500;
-        color: black;
-        font-family: "Playball", cursive;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    font-family: "Playball", cursive;
 }
 
 .img2:hover::after {
@@ -545,10 +546,10 @@ footer {
     overflow: hidden;
     box-shadow: 0 0 15px #000;
     text-align: center;
-        font-size: 17px;
-        font-weight: 500;
-        color: palevioletred;
-        font-family: "Playball", cursive;
+    font-size: 17px;
+    font-weight: 500;
+    color: palevioletred;
+    font-family: "Playball", cursive;
 }
 
 .img3:hover::after {
@@ -590,7 +591,7 @@ footer {
     .img_part2 {
         width: 55%;
         padding: 2%;
-        
+
         img {
             height: 600px;
             width: 700px;
@@ -611,7 +612,7 @@ footer {
 .box_grande {
     display: flex;
     padding-bottom: 2%;
-    
+
     .como_empezo {
         @include df-row();
         padding: 1%;
@@ -652,10 +653,10 @@ footer {
     }
 
     h2 {
-    text-align: center;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
+        text-align: center;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 800;
     }
 
     img {
@@ -671,10 +672,11 @@ footer {
         height: 100%;
     }
 
-    .nc1, .nc2 {
+    .nc1,
+    .nc2 {
         @include df-row();
         gap: 1%;
-        
+
         p {
             display: flex;
             align-items: center;
@@ -705,7 +707,7 @@ footer {
 }
 
 .first_curso {
-    @include df-direction-clmn();   
+    @include df-direction-clmn();
     border: 10px solid black;
     justify-content: center;
     border-radius: 10px;
@@ -720,11 +722,11 @@ footer {
 
             color: white;
             width: 50%;
-            
+
             ol {
-                
+
                 padding: 4% 0 0 4%;
-                
+
                 li {
                     padding: 3%;
                     font-size: 22px;
@@ -767,6 +769,7 @@ footer {
             border: 2px solid black;
             border-radius: 10px;
             background: radial-gradient(circle, #808080, #000000);
+
             p {
                 text-align: center;
                 font-size: 17px;
@@ -776,7 +779,7 @@ footer {
 
             h4 {
                 font-family: "Roboto", sans-serif;
-                font-weight: 400;               
+                font-weight: 400;
                 padding: 2% 0 0 1%;
             }
 
@@ -816,7 +819,9 @@ footer {
     }
 }
 
-.dinero, .tarjeta, .banco {
+.dinero,
+.tarjeta,
+.banco {
     width: 50px;
     height: 50px;
     padding-left: 10%;
@@ -904,3 +909,95 @@ footer {
 }
 
 /**Termina all cursos**/
+
+/**Comienza Responsive**/
+
+@media (max-width:780px) {
+
+    .fotos_academia {
+        gap: 1rem;
+    }
+}
+
+@media (max-width:810px) {
+    .welcome {
+        h1 {
+            font-size: 30px;
+        }
+
+        .p1 {
+            font-size: 20px;
+        }
+
+        .png_info {
+            font-size: 12px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:615px) {
+
+    .fotos_academia {
+        @include df-direction-clmn();
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width:421px) {
+    .part1 {
+        margin-top: 4px;
+    }
+
+    .welcome {
+        @include df-direction-clmn();
+        gap: 6%;
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width:799px) {
+    .part2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+
+        .card {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width:615px) {
+    .part2 {
+        .card {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width:499px) {
+    .part2 {
+        grid-template-columns: 100%;
+        margin-bottom: 110px;
+    }
+}
+
+@media (max-width:850px) {
+    .cursos {
+        div:nth-child(3) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+}

@@ -207,15 +207,16 @@ main {
 
 .fotos_academia {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .fotos_academia img {
-  height: 300px;
-  width: 400px;
+  width: 30%;
   box-shadow: 0 0 15px #000;
   margin-top: 4%;
   transition: 800ms;
+  aspect-ratio: 1/1;
 }
 .fotos_academia img:hover {
   transition: 800ms;
@@ -243,6 +244,7 @@ main {
   align-items: center;
   color: white;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 .part2 .card h4 {
   font-size: 20px;
@@ -301,7 +303,8 @@ footer {
   padding: 2% 2% 0 2%;
   color: white;
 }
-footer .maps, footer .derechos {
+footer .maps,
+footer .derechos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -584,12 +587,14 @@ footer .newsletter .email .email1 {
   justify-content: space-around;
   height: 100%;
 }
-.box_grande .nc1, .box_grande .nc2 {
+.box_grande .nc1,
+.box_grande .nc2 {
   display: flex;
   flex-direction: row;
   gap: 1%;
 }
-.box_grande .nc1 p, .box_grande .nc2 p {
+.box_grande .nc1 p,
+.box_grande .nc2 p {
   display: flex;
   align-items: center;
   color: white;
@@ -714,7 +719,9 @@ footer .newsletter .email .email1 {
   font-weight: 300;
 }
 
-.dinero, .tarjeta, .banco {
+.dinero,
+.tarjeta,
+.banco {
   width: 50px;
   height: 50px;
   padding-left: 10%;
@@ -798,4 +805,74 @@ footer .newsletter .email .email1 {
   margin-top: 2%;
 }
 
-/**Termina all cursos**//*# sourceMappingURL=styles.css.map */
+/**Termina all cursos**/
+/**Comienza Responsive**/
+@media (max-width: 780px) {
+  .fotos_academia {
+    gap: 1rem;
+  }
+}
+@media (max-width: 810px) {
+  .welcome h1 {
+    font-size: 30px;
+  }
+  .welcome .p1 {
+    font-size: 20px;
+  }
+  .welcome .png_info {
+    font-size: 12px;
+  }
+  .welcome .png_info img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 615px) {
+  .fotos_academia {
+    display: flex;
+    flex-direction: column;
+  }
+  .fotos_academia img {
+    width: 50%;
+  }
+}
+@media (max-width: 421px) {
+  .part1 {
+    margin-top: 4px;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+  }
+  .welcome h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 799px) {
+  .part2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+  .part2 .card {
+    width: 50%;
+  }
+}
+@media (max-width: 615px) {
+  .part2 .card {
+    width: 70%;
+  }
+}
+@media (max-width: 499px) {
+  .part2 {
+    grid-template-columns: 100%;
+    margin-bottom: 110px;
+  }
+}
+@media (max-width: 850px) {
+  .cursos div:nth-child(3) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}/*# sourceMappingURL=styles.css.map */
