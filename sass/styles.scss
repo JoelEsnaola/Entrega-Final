@@ -355,7 +355,7 @@ main {
 
 /**Termina part 3**/
 
-footer {
+#footer {
     background-color: #000;
     display: flex;
     padding: 2% 2% 0 2%;
@@ -1043,9 +1043,6 @@ footer {
 
 @media (max-width:1069px) {
     footer {
-
-        gap: 1rem;
-
         iframe {
             width: 350px;
             height: 200px;
