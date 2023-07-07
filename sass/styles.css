@@ -544,6 +544,7 @@ main {
   padding: 1%;
   gap: 1%;
   width: 50%;
+  box-sizing: border-box;
 }
 .box_grande .como_empezo div:nth-child(1) {
   width: 50%;
@@ -1133,5 +1134,36 @@ main {
 @media (max-width: 565px) {
   .part3_about .box_grande .como_empezo div:nth-child(1) {
     padding-top: 4%;
+  }
+}
+@media (max-width: 350px) {
+  .h2_part3_about {
+    padding-top: 4%;
+  }
+  .box_grande {
+    padding-top: 2%;
+  }
+  .box_grande .como_empezo p {
+    font-size: 17px;
+  }
+  .nuestros_cursos .nc1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .nuestros_cursos .nc1 p {
+    padding-top: 4%;
+    font-size: 17px;
+  }
+  .nuestros_cursos .nc2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nuestros_cursos .nc2 p {
+    padding-top: 4%;
+    font-size: 17px;
+  }
+  .nuestros_cursos img {
+    width: 180px;
+    height: 120px;
   }
 }/*# sourceMappingURL=styles.css.map */
