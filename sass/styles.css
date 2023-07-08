@@ -1136,9 +1136,10 @@ main {
     padding-top: 4%;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .h2_part3_about {
     padding-top: 4%;
+    padding-bottom: 3%;
   }
   .box_grande {
     padding-top: 2%;
