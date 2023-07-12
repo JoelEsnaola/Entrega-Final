@@ -630,6 +630,7 @@ main {
   justify-content: center;
   border-radius: 10px;
   background: linear-gradient(to bottom right, burlywood, rgba(128, 128, 128, 0.5));
+  height: 630px;
 }
 .first_curso .box_info {
   display: flex;
@@ -667,16 +668,17 @@ main {
   border-radius: 8px;
 }
 .first_curso .box_info2 {
-  display: grid;
-  grid-template-columns: 30% 30% 40%;
+  display: flex;
+  justify-content: space-around;
   padding-top: 4%;
+  padding-bottom: 1%;
+  height: 50%;
 }
 .first_curso .box_info2 .temas {
   display: flex;
   flex-direction: column;
   color: white;
-  margin: 2%;
-  padding: 1%;
+  width: 30%;
   border: 2px solid black;
   border-radius: 10px;
   background: radial-gradient(circle, #808080, #000000);
@@ -699,6 +701,7 @@ main {
 .first_curso .box_info2 .compra {
   display: flex;
   flex-direction: row;
+  width: 30%;
 }
 .first_curso .box_info2 .compra .metodos_dePago {
   display: flex;
@@ -726,15 +729,17 @@ main {
 .banco {
   width: 50px;
   height: 50px;
-  padding-left: 10%;
 }
 
 .como_pagar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 15%;
-  width: 50%;
+  width: 60%;
+}
+.como_pagar div:nth-child(1) {
+  display: flex;
+  justify-content: space-around;
 }
 .como_pagar .button {
   display: flex;
@@ -764,6 +769,8 @@ main {
 .trabajos_alumnas {
   display: flex;
   flex-direction: column;
+  width: 30%;
+  height: 30%;
 }
 .trabajos_alumnas .one_trabajos {
   display: flex;
@@ -1166,5 +1173,30 @@ main {
   .nuestros_cursos img {
     width: 180px;
     height: 120px;
+  }
+}
+@media (max-width: 1200px) {
+  .como_pagar {
+    padding-left: 10%;
+  }
+  .como_pagar div:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+  }
+  .como_pagar div:nth-child(1) .dinero, .como_pagar div:nth-child(1) .banco, .como_pagar div:nth-child(1) .tarjeta {
+    padding-left: 0%;
+  }
+  .metodos_dePago {
+    padding-left: 2%;
+  }
+  .two_trabajos .fotos_alumnas {
+    width: 95px;
+    height: 95px;
+  }
+}
+@media (max-width: 1110px) {
+  .box_info2 {
+    display: grid;
+    grid-template-rows: 50% 50%;
   }
 }/*# sourceMappingURL=styles.css.map */
