@@ -1245,7 +1245,9 @@ main {
     align-items: center;
     padding-top: 10%;
   }
-  .tarjeta, .banco, .dinero {
+  .tarjeta,
+  .banco,
+  .dinero {
     width: 40px;
     height: 40px;
   }
@@ -1300,7 +1302,9 @@ main {
     padding-top: 0%;
     padding-bottom: 5%;
   }
-  .box_info2 .como_pagar div:nth-child(1) .dinero, .box_info2 .como_pagar div:nth-child(1) .banco, .box_info2 .como_pagar div:nth-child(1) .tarjeta {
+  .box_info2 .como_pagar div:nth-child(1) .dinero,
+  .box_info2 .como_pagar div:nth-child(1) .banco,
+  .box_info2 .como_pagar div:nth-child(1) .tarjeta {
     width: 55px;
     height: 55px;
   }
@@ -1339,5 +1343,159 @@ main {
   }
   .box_info2 #compra .metodos_dePago {
     padding-left: 10%;
+  }
+}
+@media (max-width: 625px) {
+  .first_curso .box_info .box_infoCurso h2 {
+    font-size: 45px;
+  }
+  .first_curso .box_info .box_infoCurso ol li {
+    font-size: 20px;
+  }
+  .box_info2 #temas {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .como_pagar .button button {
+    width: 60%;
+    height: 60%;
+  }
+  .como_pagar .button button:hover {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (max-width: 570px) {
+  .box_info {
+    padding-bottom: 6%;
+    padding-top: 3%;
+  }
+  .first_curso .box_info .box_infoCurso h2 {
+    font-size: 35px;
+  }
+  .first_curso .box_info .box_infoCurso ol li {
+    font-size: 14px;
+  }
+  .first_curso .box_info .box_foto_curso {
+    width: 60%;
+  }
+  .first_curso .box_info .box_foto_curso img {
+    width: 90%;
+    height: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .first_curso .box_info2 .temas h4 {
+    font-size: 20px;
+  }
+  .first_curso .box_info2 .temas ul li {
+    font-size: 14px;
+  }
+  .box_info2 .trabajos_alumnas .two_trabajos .fotos_alumnas {
+    width: 99px;
+    height: 99px;
+  }
+  .box_info2 .trabajos_alumnas .two_trabajos .fotos_alumnas:hover {
+    width: 120px;
+    height: 120px;
+  }
+  .first_curso .box_info .box_infoCurso h2 {
+    font-size: 30px;
+  }
+  .first_curso .box_info .box_infoCurso ol li {
+    font-size: 12px;
+  }
+  .box_info2 .como_pagar div:nth-child(1) .dinero,
+  .box_info2 .como_pagar div:nth-child(1) .banco,
+  .box_info2 .como_pagar div:nth-child(1) .tarjeta {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .box_info2 .trabajos_alumnas .one_trabajos p {
+    font-size: 20px;
+  }
+  .two_trabajos {
+    height: 45%;
+  }
+  .box_info2 .trabajos_alumnas {
+    height: 300px;
+  }
+}
+@media (max-width: 405px) {
+  .box_info2 .trabajos_alumnas {
+    display: none;
+  }
+  #compra {
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+  .box_info2 #compra .metodos_dePago {
+    padding-left: 5%;
+  }
+}
+@media (max-width: 365px) {
+  .first_curso .box_info2 .temas p {
+    font-size: 14px;
+  }
+  .first_curso .box_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .first_curso .box_info .box_foto_curso {
+    width: 70%;
+  }
+  .first_curso .box_info .box_infoCurso {
+    padding-top: 4%;
+  }
+}
+@media (max-width: 310px) {
+  .como_pagar {
+    padding-left: 0%;
+  }
+  .box_info2 .como_pagar div:nth-child(1) .dinero,
+  .box_info2 .como_pagar div:nth-child(1) .banco,
+  .box_info2 .como_pagar div:nth-child(1) .tarjeta {
+    width: 35px;
+    height: 35px;
+  }
+  .box_info2 .como_pagar div:nth-child(1) {
+    flex-direction: column;
+  }
+  #footer .maps, .derechos, .redes {
+    box-sizing: border-box;
+  }
+  #footer iframe {
+    width: 280px;
+    height: 150px;
+  }
+}
+@media (max-width: 290px) {
+  .main_curso h1 {
+    font-size: 35px;
+  }
+  #footer iframe {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (max-width: 270px) {
+  .first_curso .box_info2 .temas p {
+    font-size: 12px;
+  }
+  .first_curso .box_info2 .temas ul li {
+    font-size: 12px;
+  }
+  .como_pagar .button button {
+    font-size: 12px;
+    width: 75%;
+    height: 75%;
+  }
+  .como_pagar .button button:hover {
+    font-size: 14px;
+    width: 80%;
+    height: 80%;
   }
 }/*# sourceMappingURL=styles.css.map */
