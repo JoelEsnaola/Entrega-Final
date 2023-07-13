@@ -630,7 +630,6 @@ main {
   justify-content: center;
   border-radius: 10px;
   background: linear-gradient(to bottom right, burlywood, rgba(128, 128, 128, 0.5));
-  height: 630px;
 }
 .first_curso .box_info {
   display: flex;
@@ -682,6 +681,7 @@ main {
   border: 2px solid black;
   border-radius: 10px;
   background: radial-gradient(circle, #808080, #000000);
+  height: 90%;
 }
 .first_curso .box_info2 .temas p {
   text-align: center;
@@ -770,7 +770,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 30%;
-  height: 30%;
 }
 .trabajos_alumnas .one_trabajos {
   display: flex;
@@ -794,6 +793,7 @@ main {
   justify-content: center;
   gap: 4%;
   padding-top: 2%;
+  align-items: center;
   height: 100%;
 }
 .two_trabajos .fotos_alumnas {
@@ -1119,13 +1119,16 @@ main {
   }
 }
 @media (max-width: 565px) {
-  .nc1, .nc2 {
+  .nc1,
+  .nc2 {
     padding-top: 3%;
   }
-  .nc1 p, .nc2 p {
+  .nc1 p,
+  .nc2 p {
     font-size: 14px;
   }
-  .nc1 img, .nc2 img {
+  .nc1 img,
+  .nc2 img {
     width: 100px;
     height: 100px;
   }
@@ -1183,7 +1186,9 @@ main {
     display: flex;
     justify-content: space-around;
   }
-  .como_pagar div:nth-child(1) .dinero, .como_pagar div:nth-child(1) .banco, .como_pagar div:nth-child(1) .tarjeta {
+  .como_pagar div:nth-child(1) .dinero,
+  .como_pagar div:nth-child(1) .banco,
+  .como_pagar div:nth-child(1) .tarjeta {
     padding-left: 0%;
   }
   .metodos_dePago {
@@ -1194,9 +1199,145 @@ main {
     height: 95px;
   }
 }
-@media (max-width: 1110px) {
+@media (max-width: 1320px) {
+  .first_curso .box_info2 .temas ul {
+    padding-top: 3%;
+  }
+  .first_curso .box_info2 .temas h4 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1245px) {
+  .first_curso .box_info2 .temas ul {
+    padding-top: 6%;
+  }
+  .first_curso .box_info2 .temas h4 {
+    padding-top: 4%;
+  }
+  .first_curso .box_info2 .temas p {
+    font-size: 16px;
+    padding-top: 2%;
+  }
+}
+@media (max-width: 1185px) {
+  .como_pagar .button button {
+    width: 45%;
+    height: 45%;
+  }
+  .first_curso .box_info2 .temas h4 {
+    padding-top: 6%;
+  }
+}
+@media (max-width: 1185px) {
+  .como_pagar .button button {
+    width: 70%;
+    height: 35%;
+  }
+  .como_pagar .button button:hover {
+    width: 75%;
+    height: 40%;
+  }
+  .compra .metodos_dePago #h5 {
+    font-size: 20px;
+  }
+  .como_pagar div:nth-child(1) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .tarjeta, .banco, .dinero {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1050px) {
+  .trabajos_alumnas .one_trabajos {
+    display: flex;
+    flex-direction: column;
+  }
+  .trabajos_alumnas .one_trabajos p {
+    padding-top: 4%;
+    font-size: 19px;
+  }
+}
+@media (max-width: 1050px) {
+  .first_curso .box_info2 .temas ul {
+    padding-top: 10%;
+  }
+  .first_curso .box_info2 .temas h4 {
+    padding-top: 7%;
+  }
+}
+@media (max-width: 955px) {
+  .como_pagar .button button {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .como_pagar .button button:hover {
+    width: 25%;
+    height: 90%;
+  }
+  .first_curso .box_info2 .temas h4 {
+    font-size: 24px;
+  }
+  .first_curso .box_info2 .temas ul {
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  .first_curso .box_info2 .temas ul li {
+    font-size: 16px;
+  }
   .box_info2 {
-    display: grid;
-    grid-template-rows: 50% 50%;
+    flex-direction: column;
+    gap: 2%;
+  }
+  .box_info2 .como_pagar div:nth-child(1) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 0%;
+    padding-bottom: 5%;
+  }
+  .box_info2 .como_pagar div:nth-child(1) .dinero, .box_info2 .como_pagar div:nth-child(1) .banco, .box_info2 .como_pagar div:nth-child(1) .tarjeta {
+    width: 55px;
+    height: 55px;
+  }
+  .box_info2 #h5 {
+    font-size: 24px;
+    padding-bottom: 2%;
+  }
+  .box_info2 .trabajos_alumnas {
+    width: 100%;
+    height: 350px;
+  }
+  .box_info2 .trabajos_alumnas .one_trabajos p {
+    font-size: 25px;
+  }
+  .box_info2 .trabajos_alumnas .one_trabajos .galeria {
+    width: 80px;
+    height: 80px;
+  }
+  .box_info2 .trabajos_alumnas .two_trabajos .fotos_alumnas {
+    width: 120px;
+    height: 120px;
+    transition: 600ms;
+  }
+  .box_info2 .trabajos_alumnas .two_trabajos .fotos_alumnas:hover {
+    width: 150px;
+    height: 150px;
+    transition: 600ms;
+  }
+  .box_info2 #temas {
+    width: 70%;
+    margin-left: 15%;
+    align-items: center;
+  }
+  .box_info2 #compra {
+    width: 100%;
+  }
+  .box_info2 #compra .metodos_dePago {
+    padding-left: 10%;
   }
 }/*# sourceMappingURL=styles.css.map */
